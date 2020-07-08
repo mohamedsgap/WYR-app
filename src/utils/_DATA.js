@@ -7,9 +7,9 @@ let users = {
       "8xf0y6ziyjabvozdd253nd": "optionOne",
       "6ni6ok3ym7mf1p33lnez": "optionTwo",
       am8ehyc8byjqgar0jgpub9: "optionTwo",
-      loxhs1bqm25b708cmbf3g: "optionTwo"
+      loxhs1bqm25b708cmbf3g: "optionTwo",
     },
-    questions: ["8xf0y6ziyjabvozdd253nd", "am8ehyc8byjqgar0jgpub9"]
+    questions: ["8xf0y6ziyjabvozdd253nd", "am8ehyc8byjqgar0jgpub9"],
   },
   dan: {
     id: "dan",
@@ -17,9 +17,9 @@ let users = {
     avatarURL: "/images/avatars/cat.png",
     answers: {
       vthrdm985a262al8qx3do: "optionOne",
-      xj352vofupe1dqz9emx13r: "optionTwo"
+      xj352vofupe1dqz9emx13r: "optionTwo",
     },
-    questions: ["loxhs1bqm25b708cmbf3g", "vthrdm985a262al8qx3do"]
+    questions: ["loxhs1bqm25b708cmbf3g", "vthrdm985a262al8qx3do"],
   },
   jack: {
     id: "jack",
@@ -28,45 +28,45 @@ let users = {
     answers: {
       xj352vofupe1dqz9emx13r: "optionOne",
       vthrdm985a262al8qx3do: "optionTwo",
-      "6ni6ok3ym7mf1p33lnez": "optionTwo"
+      "6ni6ok3ym7mf1p33lnez": "optionTwo",
     },
-    questions: ["6ni6ok3ym7mf1p33lnez", "xj352vofupe1dqz9emx13r"]
+    questions: ["6ni6ok3ym7mf1p33lnez", "xj352vofupe1dqz9emx13r"],
   },
   mark: {
     id: "mark",
     name: "Mark",
     avatarURL: "/images/avatars/gorilla.png",
     answers: {},
-    questions: []
+    questions: [],
   },
   mariam: {
     id: "mariam",
     name: "Mariam",
     avatarURL: "/images/avatars/koala.png",
     answers: {},
-    questions: []
+    questions: [],
   },
   arden: {
     id: "arden",
     name: "Arden",
     avatarURL: "/images/avatars/rabbit.png",
     answers: {},
-    questions: []
+    questions: [],
   },
   will: {
     id: "will",
     name: "Will",
     avatarURL: "/images/avatars/tiger.png",
     answers: {},
-    questions: []
+    questions: [],
   },
   mohamed: {
     id: "mohamed",
     name: "Mohamed",
     avatarURL: "/images/avatars/fox.png",
     answers: {},
-    questions: []
-  }
+    questions: [],
+  },
 };
 
 let questions = {
@@ -76,12 +76,12 @@ let questions = {
     timestamp: 1467166872634,
     optionOne: {
       votes: ["sophie"],
-      text: "have horrible short term memory"
+      text: "have horrible short term memory",
     },
     optionTwo: {
       votes: [],
-      text: "have horrible long term memory"
-    }
+      text: "have horrible long term memory",
+    },
   },
   "6ni6ok3ym7mf1p33lnez": {
     id: "6ni6ok3ym7mf1p33lnez",
@@ -89,12 +89,12 @@ let questions = {
     timestamp: 1468479767190,
     optionOne: {
       votes: [],
-      text: "become a superhero"
+      text: "become a superhero",
     },
     optionTwo: {
       votes: ["dan", "sophie"],
-      text: "become a supervillain"
-    }
+      text: "become a supervillain",
+    },
   },
   am8ehyc8byjqgar0jgpub9: {
     id: "am8ehyc8byjqgar0jgpub9",
@@ -102,12 +102,12 @@ let questions = {
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
-      text: "be telekinetic"
+      text: "be telekinetic",
     },
     optionTwo: {
       votes: ["sophie"],
-      text: "be telepathic"
-    }
+      text: "be telepathic",
+    },
   },
   loxhs1bqm25b708cmbf3g: {
     id: "loxhs1bqm25b708cmbf3g",
@@ -115,12 +115,12 @@ let questions = {
     timestamp: 1482579767190,
     optionOne: {
       votes: [],
-      text: "be a front-end developer"
+      text: "be a front-end developer",
     },
     optionTwo: {
       votes: ["sophie"],
-      text: "be a back-end developer"
-    }
+      text: "be a back-end developer",
+    },
   },
   vthrdm985a262al8qx3do: {
     id: "vthrdm985a262al8qx3do",
@@ -128,12 +128,12 @@ let questions = {
     timestamp: 1489579767190,
     optionOne: {
       votes: ["arden"],
-      text: "find $50 yourself"
+      text: "find $50 yourself",
     },
     optionTwo: {
       votes: ["dan"],
-      text: "have your best friend find $500"
-    }
+      text: "have your best friend find $500",
+    },
   },
   xj352vofupe1dqz9emx13r: {
     id: "xj352vofupe1dqz9emx13r",
@@ -141,23 +141,19 @@ let questions = {
     timestamp: 1493579767190,
     optionOne: {
       votes: ["dan"],
-      text: "write JavaScript"
+      text: "write JavaScript",
     },
     optionTwo: {
       votes: ["will"],
-      text: "write Swift"
-    }
-  }
+      text: "write Swift",
+    },
+  },
 };
 
 function generateUID() {
   return (
-    Math.random()
-      .toString(36)
-      .substring(2, 15) +
-    Math.random()
-      .toString(36)
-      .substring(2, 15)
+    Math.random().toString(36).substring(2, 15) +
+    Math.random().toString(36).substring(2, 15)
   );
 }
 
@@ -180,12 +176,12 @@ function formatQuestion({ optionOneText, optionTwoText, author }) {
     author,
     optionOne: {
       votes: [],
-      text: optionOneText
+      text: optionOneText,
     },
     optionTwo: {
       votes: [],
-      text: optionTwoText
-    }
+      text: optionTwoText,
+    },
   };
 }
 
@@ -197,15 +193,15 @@ export function _saveQuestion(question) {
     setTimeout(() => {
       questions = {
         ...questions,
-        [formattedQuestion.id]: formattedQuestion
+        [formattedQuestion.id]: formattedQuestion,
       };
 
       users = {
         ...users,
         [authUser]: {
           ...users[authUser],
-          questions: users[authUser].questions.concat([formattedQuestion.id])
-        }
+          questions: users[authUser].questions.concat([formattedQuestion.id]),
+        },
       };
 
       res(formattedQuestion);
@@ -222,9 +218,9 @@ export function _saveQuestionAnswer({ authUser, qid, answer }) {
           ...users[authUser],
           answers: {
             ...users[authUser].answers,
-            [qid]: answer
-          }
-        }
+            [qid]: answer,
+          },
+        },
       };
 
       questions = {
@@ -233,9 +229,9 @@ export function _saveQuestionAnswer({ authUser, qid, answer }) {
           ...questions[qid],
           [answer]: {
             ...questions[qid][answer],
-            votes: questions[qid][answer].votes.concat([authUser])
-          }
-        }
+            votes: questions[qid][answer].votes.concat([authUser]),
+          },
+        },
       };
 
       res();
