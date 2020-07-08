@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import {
   Segment,
   Grid,
@@ -8,13 +8,13 @@ import {
   Image,
   Form,
   Loader,
-  Dimmer
-} from 'semantic-ui-react';
-import { setAuthUser } from '../actions/authUser';
+  Dimmer,
+} from "semantic-ui-react";
+import { setAuthUser } from "../actions/authUser";
 
 export class Login extends Component {
   state = {
-    loading: false
+    loading: false,
   };
   handleLoading = () => {
     this.setState({ loading: true });
@@ -73,15 +73,15 @@ const BrandImage = () => (
 
 class LoginForm extends Component {
   static propTypes = {
-    onLoading: PropTypes.func.isRequired
+    onLoading: PropTypes.func.isRequired,
   };
   state = {
-    value: ''
+    value: "",
   };
   onChange = (e, { value }) => {
     this.setState({ value });
   };
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const { onLoading, setAuthUser } = this.props;
     const authUser = this.state.value;
@@ -94,16 +94,16 @@ class LoginForm extends Component {
   generateDropdownData = () => {
     const { users } = this.props;
 
-    return users.map(user => ({
+    return users.map((user) => ({
       key: user.id,
       text: user.name,
       value: user.id,
-      image: { avatar: true, src: user.avatarURL }
+      image: { avatar: true, src: user.avatarURL },
     }));
   };
   render() {
     const { value } = this.state;
-    const disabled = value === '' ? true : false;
+    const disabled = value === "" ? true : false;
 
     return (
       <Form onSubmit={this.handleSubmit}>
@@ -126,14 +126,11 @@ class LoginForm extends Component {
   }
 }
 
-const ConnectedLoginForm = connect(
-  mapStateToProps,
-  { setAuthUser }
-)(LoginForm);
+const ConnectedLoginForm = connect(mapStateToProps, { setAuthUser })(LoginForm);
 
 function mapStateToProps({ users }) {
   return {
-    users: Object.values(users)
+    users: Object.values(users),
   };
 }
 
