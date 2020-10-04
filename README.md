@@ -10,4 +10,10 @@ Built a **Would You Rather** application where users are given questions and mus
   yarn start
 ```
 
-### Made with ♥️ by Mohamed Abdel Nasser
+### ---> **Note:**
+
+when you visit the game, we need to sign in by choosing a character, then the app direct you to Home page but unfortunatily we gonna see this message:
+**No Match 404 Error Nothing to see here. Please use the menu to try again.**, this happend because a deployment issue with `GitHub Pages` and the routing to my old personal website.
+**_To Fix and remove this message you need to click on `Home` in the `Nav` in the game_**
+
+#### Made with ♥️ by Mohamed Abdel Nasser
