@@ -1,8 +1,8 @@
 let users = {
-  sophie: {
-    id: "sophie",
-    name: "Sophie",
-    avatarURL: "/images/avatars/dog.png",
+  maria: {
+    id: "maria",
+    name: "Maria",
+    avatarURL: "/images/avatars/Maria.png",
     answers: {
       "8xf0y6ziyjabvozdd253nd": "optionOne",
       "6ni6ok3ym7mf1p33lnez": "optionTwo",
@@ -11,10 +11,10 @@ let users = {
     },
     questions: ["8xf0y6ziyjabvozdd253nd", "am8ehyc8byjqgar0jgpub9"],
   },
-  dan: {
-    id: "dan",
-    name: "Dan",
-    avatarURL: "/images/avatars/cat.png",
+  daniel: {
+    id: "daniel",
+    name: "Daniel",
+    avatarURL: "/images/avatars/Daniel.png",
     answers: {
       vthrdm985a262al8qx3do: "optionOne",
       xj352vofupe1dqz9emx13r: "optionTwo",
@@ -24,7 +24,7 @@ let users = {
   jack: {
     id: "jack",
     name: "Jack",
-    avatarURL: "/images/avatars/lion.png",
+    avatarURL: "/images/avatars/Jack.png",
     answers: {
       xj352vofupe1dqz9emx13r: "optionOne",
       vthrdm985a262al8qx3do: "optionTwo",
@@ -32,38 +32,38 @@ let users = {
     },
     questions: ["6ni6ok3ym7mf1p33lnez", "xj352vofupe1dqz9emx13r"],
   },
-  mark: {
-    id: "mark",
-    name: "Mark",
-    avatarURL: "/images/avatars/gorilla.png",
+  ashley: {
+    id: "ashley",
+    name: "Ashley",
+    avatarURL: "/images/avatars/Ashley.png",
     answers: {},
     questions: [],
   },
   mariam: {
     id: "mariam",
     name: "Mariam",
-    avatarURL: "/images/avatars/koala.png",
+    avatarURL: "/images/avatars/Mariam.png",
     answers: {},
     questions: [],
   },
   arden: {
     id: "arden",
     name: "Arden",
-    avatarURL: "/images/avatars/rabbit.png",
+    avatarURL: "/images/avatars/Arden.png",
     answers: {},
     questions: [],
   },
-  will: {
-    id: "will",
-    name: "Will",
-    avatarURL: "/images/avatars/tiger.png",
+  martha: {
+    id: "martha",
+    name: "Martha",
+    avatarURL: "/images/avatars/Martha.png",
     answers: {},
     questions: [],
   },
   mohamed: {
     id: "mohamed",
     name: "Mohamed",
-    avatarURL: "/images/avatars/fox.png",
+    avatarURL: "/images/avatars/Mohamed.png",
     answers: {},
     questions: [],
   },
