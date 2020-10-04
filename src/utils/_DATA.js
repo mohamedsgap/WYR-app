@@ -2,7 +2,7 @@ let users = {
   maria: {
     id: "maria",
     name: "Maria",
-    avatarURL: "../images/avatars/Maria.png",
+    avatarURL: require("../images/avatars/Maria.png"),
     answers: {
       "8xf0y6ziyjabvozdd253nd": "optionOne",
       "6ni6ok3ym7mf1p33lnez": "optionTwo",
@@ -14,7 +14,7 @@ let users = {
   daniel: {
     id: "daniel",
     name: "Daniel",
-    avatarURL: "../images/avatars/Daniel.png",
+    avatarURL: require("../images/avatars/Daniel.png"),
     answers: {
       vthrdm985a262al8qx3do: "optionOne",
       xj352vofupe1dqz9emx13r: "optionTwo",
@@ -24,7 +24,7 @@ let users = {
   jack: {
     id: "jack",
     name: "Jack",
-    avatarURL: "../images/avatars/Jack.png",
+    avatarURL: require("../images/avatars/Jack.png"),
     answers: {
       xj352vofupe1dqz9emx13r: "optionOne",
       vthrdm985a262al8qx3do: "optionTwo",
@@ -35,35 +35,35 @@ let users = {
   ashley: {
     id: "ashley",
     name: "Ashley",
-    avatarURL: "../images/avatars/Ashley.png",
+    avatarURL: require("../images/avatars/Ashley.png"),
     answers: {},
     questions: [],
   },
   mariam: {
     id: "mariam",
     name: "Mariam",
-    avatarURL: "../images/avatars/Mariam.png",
+    avatarURL: require("../images/avatars/Mariam.png"),
     answers: {},
     questions: [],
   },
   arden: {
     id: "arden",
     name: "Arden",
-    avatarURL: "../images/avatars/Arden.png",
+    avatarURL: require("../images/avatars/Arden.png"),
     answers: {},
     questions: [],
   },
   martha: {
     id: "martha",
     name: "Martha",
-    avatarURL: "../images/avatars/Martha.png",
+    avatarURL: require("../images/avatars/Martha.png"),
     answers: {},
     questions: [],
   },
   mohamed: {
     id: "mohamed",
     name: "Mohamed",
-    avatarURL: "../images/avatars/Mohamed.png",
+    avatarURL: require("../images/avatars/Mohamed.png"),
     answers: {},
     questions: [],
   },

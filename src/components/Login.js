@@ -11,7 +11,7 @@ import {
   Dimmer,
 } from "semantic-ui-react";
 import { setAuthUser } from "../actions/authUser";
-
+import img from "../images/avatars/avatars.png";
 export default function Login() {
   const [loading, setLoading] = useState(false);
 
@@ -70,9 +70,7 @@ const LoginGridLayout = ({ image, form, loading }) => (
   </div>
 );
 
-const BrandImage = () => (
-  <Image src="../images/avatars/avatars.png" size="medium" centered />
-);
+const BrandImage = () => <Image src={img} size="medium" centered />;
 
 function LoginForm(props) {
   LoginForm.propTypes = {
