@@ -1,7 +1,7 @@
 {
   "name": "wyr-app",
   "version": "0.1.0",
-  "homepage": "https://mohamedsgap.github.io/wyr-app",
+  "homepage": "https://mohamedsgap.github.io/WYR-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
