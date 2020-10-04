@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wyr-app/static/css/main.f15ee313.chunk.css",
+    "main.js": "/wyr-app/static/js/main.7516f064.chunk.js",
+    "main.js.map": "/wyr-app/static/js/main.7516f064.chunk.js.map",
+    "runtime-main.js": "/wyr-app/static/js/runtime-main.3cc0981a.js",
+    "runtime-main.js.map": "/wyr-app/static/js/runtime-main.3cc0981a.js.map",
+    "static/js/2.16dc491e.chunk.js": "/wyr-app/static/js/2.16dc491e.chunk.js",
+    "static/js/2.16dc491e.chunk.js.map": "/wyr-app/static/js/2.16dc491e.chunk.js.map",
+    "index.html": "/wyr-app/index.html",
+    "precache-manifest.ac91250902522782b403009b0167b02a.js": "/wyr-app/precache-manifest.ac91250902522782b403009b0167b02a.js",
+    "service-worker.js": "/wyr-app/service-worker.js",
+    "static/css/main.f15ee313.chunk.css.map": "/wyr-app/static/css/main.f15ee313.chunk.css.map",
+    "static/js/2.16dc491e.chunk.js.LICENSE": "/wyr-app/static/js/2.16dc491e.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cc0981a.js",
+    "static/js/2.16dc491e.chunk.js",
+    "static/css/main.f15ee313.chunk.css",
+    "static/js/main.7516f064.chunk.js"
+  ]
+}
