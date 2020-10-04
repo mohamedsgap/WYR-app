@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import {
   Segment,
   Grid,
@@ -12,33 +12,36 @@ import {
 } from "semantic-ui-react";
 import { setAuthUser } from "../actions/authUser";
 
-export class Login extends Component {
-  state = {
-    loading: false,
-  };
-  handleLoading = () => {
-    this.setState({ loading: true });
+export default function Login() {
+  const [loading, setLoading] = useState(false);
+
+  const handleLoading = () => {
+    setLoading(true);
   };
 
-  render() {
-    return (
-      <Fragment>
-        <Segment.Group>
-          <LoginHeader />
-          <LoginGridLayout
-            image={<BrandImage />}
-            form={<ConnectedLoginForm onLoading={this.handleLoading} />}
-            loading={this.state.loading}
-          />
-        </Segment.Group>
-        <footer className="footer">
-          <a href="https://www.freepik.com/free-photos-vectors/design">
-            Avatar characters created by freepik - www.freepik.com
-          </a>
-        </footer>
-      </Fragment>
-    );
-  }
+  return (
+    <Fragment>
+      <Segment.Group>
+        <LoginHeader />
+        <LoginGridLayout
+          image={<BrandImage />}
+          form={<LoginForm onLoading={handleLoading} />}
+          loading={loading}
+        />
+      </Segment.Group>
+      <footer className="footer">
+        <a href="https://www.freepik.com/vectors/business">
+          Business vector created by freepik - www.freepik.com
+        </a>
+        <br></br>
+        Made with{" "}
+        <span role="img" aria-label="heart">
+          ♥️
+        </span>{" "}
+        by <a href="https://github.com/mohamedsgap">Mohamed Abdel Nasser</a>
+      </footer>
+    </Fragment>
+  );
 }
 
 const LoginHeader = () => (
@@ -68,31 +71,36 @@ const LoginGridLayout = ({ image, form, loading }) => (
 );
 
 const BrandImage = () => (
-  <Image src="/images/avatars/animals.png" size="medium" centered />
+  <Image src="/images/avatars/avatars.png" size="medium" centered />
 );
 
-class LoginForm extends Component {
-  static propTypes = {
+function LoginForm(props) {
+  LoginForm.propTypes = {
     onLoading: PropTypes.func.isRequired,
   };
-  state = {
-    value: "",
+
+  const [value, setValue] = useState("");
+  const onChange = (e, { value }) => {
+    setValue(value);
   };
-  onChange = (e, { value }) => {
-    this.setState({ value });
-  };
-  handleSubmit = (e) => {
+
+  const dispatch = useDispatch();
+  const allUsers = useSelector((state) => state.users);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const { onLoading, setAuthUser } = this.props;
-    const authUser = this.state.value;
+    const { onLoading } = props;
+
+    const authUser = value;
 
     new Promise((res, rej) => {
       onLoading();
       setTimeout(() => res(), 500);
-    }).then(() => setAuthUser(authUser));
+    }).then(() => dispatch(setAuthUser(authUser)));
   };
-  generateDropdownData = () => {
-    const { users } = this.props;
+
+  const generateDropdownData = () => {
+    const users = Object.values(allUsers);
 
     return users.map((user) => ({
       key: user.id,
@@ -101,37 +109,25 @@ class LoginForm extends Component {
       image: { avatar: true, src: user.avatarURL },
     }));
   };
-  render() {
-    const { value } = this.state;
-    const disabled = value === "" ? true : false;
 
-    return (
-      <Form onSubmit={this.handleSubmit}>
-        <Header as="h2" color="green">
-          Sign In
-        </Header>
-        <Form.Dropdown
-          placeholder="Select a Friend"
-          fluid
-          selection
-          scrolling
-          options={this.generateDropdownData()}
-          value={value}
-          onChange={this.onChange}
-          required
-        />
-        <Form.Button content="Login" positive disabled={disabled} fluid />
-      </Form>
-    );
-  }
+  const disabled = value === "" ? true : false;
+
+  return (
+    <Form onSubmit={handleSubmit}>
+      <Header as="h2" color="green">
+        Sign In
+      </Header>
+      <Form.Dropdown
+        placeholder="Select a Friend"
+        fluid
+        selection
+        scrolling
+        options={generateDropdownData()}
+        value={value}
+        onChange={onChange}
+        required
+      />
+      <Form.Button content="Login" positive disabled={disabled} fluid />
+    </Form>
+  );
 }
-
-const ConnectedLoginForm = connect(mapStateToProps, { setAuthUser })(LoginForm);
-
-function mapStateToProps({ users }) {
-  return {
-    users: Object.values(users),
-  };
-}
-
-export default Login;
