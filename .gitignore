@@ -11,6 +11,9 @@
 # production
 /build
 
+# old code file
+/src/components/legacy-components
+
 # misc
 .DS_Store
 .env.local
