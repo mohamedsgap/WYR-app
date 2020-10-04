@@ -1,22 +1,31 @@
 {
   "files": {
     "main.css": "/WYR-app/static/css/main.f15ee313.chunk.css",
-    "main.js": "/WYR-app/static/js/main.7516f064.chunk.js",
-    "main.js.map": "/WYR-app/static/js/main.7516f064.chunk.js.map",
+    "main.js": "/WYR-app/static/js/main.6e8f2ffe.chunk.js",
+    "main.js.map": "/WYR-app/static/js/main.6e8f2ffe.chunk.js.map",
     "runtime-main.js": "/WYR-app/static/js/runtime-main.3aa7c876.js",
     "runtime-main.js.map": "/WYR-app/static/js/runtime-main.3aa7c876.js.map",
-    "static/js/2.16dc491e.chunk.js": "/WYR-app/static/js/2.16dc491e.chunk.js",
-    "static/js/2.16dc491e.chunk.js.map": "/WYR-app/static/js/2.16dc491e.chunk.js.map",
+    "static/js/2.c8ad0dcd.chunk.js": "/WYR-app/static/js/2.c8ad0dcd.chunk.js",
+    "static/js/2.c8ad0dcd.chunk.js.map": "/WYR-app/static/js/2.c8ad0dcd.chunk.js.map",
     "index.html": "/WYR-app/index.html",
-    "precache-manifest.353f2feed82ffdb9160594f6a91c5d9d.js": "/WYR-app/precache-manifest.353f2feed82ffdb9160594f6a91c5d9d.js",
+    "precache-manifest.ce6a96ea9ffa5840dff13f3d57dafa2b.js": "/WYR-app/precache-manifest.ce6a96ea9ffa5840dff13f3d57dafa2b.js",
     "service-worker.js": "/WYR-app/service-worker.js",
     "static/css/main.f15ee313.chunk.css.map": "/WYR-app/static/css/main.f15ee313.chunk.css.map",
-    "static/js/2.16dc491e.chunk.js.LICENSE": "/WYR-app/static/js/2.16dc491e.chunk.js.LICENSE"
+    "static/js/2.c8ad0dcd.chunk.js.LICENSE": "/WYR-app/static/js/2.c8ad0dcd.chunk.js.LICENSE",
+    "static/media/Arden.png": "/WYR-app/static/media/Arden.b89f841f.png",
+    "static/media/Ashley.png": "/WYR-app/static/media/Ashley.fbb25a0b.png",
+    "static/media/Daniel.png": "/WYR-app/static/media/Daniel.f397a3c7.png",
+    "static/media/Jack.png": "/WYR-app/static/media/Jack.375502a4.png",
+    "static/media/Maria.png": "/WYR-app/static/media/Maria.9d90756d.png",
+    "static/media/Mariam.png": "/WYR-app/static/media/Mariam.a88c6067.png",
+    "static/media/Martha.png": "/WYR-app/static/media/Martha.dedf2aeb.png",
+    "static/media/Mohamed.png": "/WYR-app/static/media/Mohamed.26f4bdec.png",
+    "static/media/avatars.png": "/WYR-app/static/media/avatars.a13885d1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3aa7c876.js",
-    "static/js/2.16dc491e.chunk.js",
+    "static/js/2.c8ad0dcd.chunk.js",
     "static/css/main.f15ee313.chunk.css",
-    "static/js/main.7516f064.chunk.js"
+    "static/js/main.6e8f2ffe.chunk.js"
   ]
 }
