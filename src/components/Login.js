@@ -71,7 +71,7 @@ const LoginGridLayout = ({ image, form, loading }) => (
 );
 
 const BrandImage = () => (
-  <Image src="/images/avatars/avatars.png" size="medium" centered />
+  <Image src="../images/avatars/avatars.png" size="medium" centered />
 );
 
 function LoginForm(props) {
