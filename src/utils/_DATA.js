@@ -72,10 +72,10 @@ let users = {
 let questions = {
   "8xf0y6ziyjabvozdd253nd": {
     id: "8xf0y6ziyjabvozdd253nd",
-    author: "sophie",
+    author: "ashley",
     timestamp: 1467166872634,
     optionOne: {
-      votes: ["sophie"],
+      votes: ["ashley"],
       text: "have horrible short term memory",
     },
     optionTwo: {
@@ -85,27 +85,27 @@ let questions = {
   },
   "6ni6ok3ym7mf1p33lnez": {
     id: "6ni6ok3ym7mf1p33lnez",
-    author: "dan",
+    author: "daniel",
     timestamp: 1468479767190,
     optionOne: {
       votes: [],
       text: "become a superhero",
     },
     optionTwo: {
-      votes: ["dan", "sophie"],
+      votes: ["daniel", "ashley"],
       text: "become a supervillain",
     },
   },
   am8ehyc8byjqgar0jgpub9: {
     id: "am8ehyc8byjqgar0jgpub9",
-    author: "sophie",
+    author: "ashley",
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
       text: "be telekinetic",
     },
     optionTwo: {
-      votes: ["sophie"],
+      votes: ["ashley"],
       text: "be telepathic",
     },
   },
@@ -118,7 +118,7 @@ let questions = {
       text: "be a front-end developer",
     },
     optionTwo: {
-      votes: ["sophie"],
+      votes: ["ashley"],
       text: "be a back-end developer",
     },
   },
@@ -131,20 +131,20 @@ let questions = {
       text: "find $50 yourself",
     },
     optionTwo: {
-      votes: ["dan"],
+      votes: ["daniel"],
       text: "have your best friend find $500",
     },
   },
   xj352vofupe1dqz9emx13r: {
     id: "xj352vofupe1dqz9emx13r",
-    author: "dan",
+    author: "daniel",
     timestamp: 1493579767190,
     optionOne: {
-      votes: ["dan"],
+      votes: ["daniel"],
       text: "write JavaScript",
     },
     optionTwo: {
-      votes: ["will"],
+      votes: ["maria"],
       text: "write Swift",
     },
   },
